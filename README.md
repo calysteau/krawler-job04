@@ -6,7 +6,7 @@ It scrapes public Sentinel images data from ESA https://scihub.copernicus.eu/use
 
 The images information (id, name, url, quicklook) are stored in a MongoDB database.
 
-![Krawler_ESA Sentinel_Sample](https://www.calysteau.fr/images/Krawler_ESA_Sentinel2_Sample.jpg)
+![Krawler_ESA Sentinel_Sample](https://www.calysteau.fr/images/Krawler_ESA_Sentinel2.jpg)
 
 ## Setting up the environment
 
