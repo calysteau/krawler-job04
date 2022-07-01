@@ -1,8 +1,8 @@
 {
-  "name": "k-meteoradar",
+  "name": "krawler-job04",
   "description": "A krwaler job to scrape Sentinel 2 images on a location",
   "version": "1.0.0",
-  "homepage": "https://github.com/calysteau/krawler-jo04",
+  "homepage": "https://github.com/calysteau/krawler-job04",
   "type": "module", 
   "keywords": [
     "krawler",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/calysteau/krawler-jo04.git"
+    "url": "git://github.com/calysteau/krawler-job04.git"
   },
   "author": {
     "name": "Calysteau",
@@ -19,7 +19,7 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/calysteau/krawler-jo04/-/issues"
+    "url": "https://github.com/calysteau/krawler-job04/-/issues"
   },
   "scripts": {
     "test": "echo \"Warning: no test specified\"",
