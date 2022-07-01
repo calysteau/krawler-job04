@@ -1,0 +1,44 @@
+{
+  "name": "k-meteoradar",
+  "description": "A krwaler job to scrape Sentinel 2 images on a location",
+  "version": "1.0.0",
+  "homepage": "https://github.com/calysteau/krawler-jo04",
+  "type": "module", 
+  "keywords": [
+    "krawler",
+    "sentinel",
+    "monitoring"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/calysteau/krawler-jo04.git"
+  },
+  "author": {
+    "name": "Calysteau",
+    "url": "https://github.com/calysteau"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/calysteau/krawler-jo04/-/issues"
+  },
+  "scripts": {
+    "test": "echo \"Warning: no test specified\"",
+    "mmdc": "./node_modules/.bin/mmdc -i jobfile.mmd -o jobfile.png -w 512",
+    "changelog": "changelog -x build,ci,chore,docs,other,perf,refactor,revert,style,test",
+    "release:major": "npm run changelog -- -M && git add CHANGELOG.md && git commit -m \"chore: updated CHANGELOG.md [skip ci]\" && git push && npm version --force major",
+    "release:minor": "npm run changelog -- -m && git add CHANGELOG.md && git commit -m \"chore: Updated CHANGELOG.md [skip ci]\" && git push && npm version --force minor",
+    "release:patch": "npm run changelog -- -p && git add CHANGELOG.md && git commit -m \"chore: Updated CHANGELOG.md [skip ci]\" && git push && npm version --force patch",
+    "postversion": "git push origin --tags"
+  },
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "moment": "^2.29.3",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "generate-changelog": "^1.8.0"
+  },
+  "peerDependencies": {
+    "@kalisio/krawler": "2.0.0"
+  }
+}
